@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ghetto-Android</string>
+    <string name="btnStartGhetto">\nGhetto Recorder Start\n</string>
+    <string name="btnStartBrowser">\nBrowser\n</string>
+</resources>

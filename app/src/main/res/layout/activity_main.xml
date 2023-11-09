@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:background="@drawable/ic_launcher_background">
+    <TextView
+        android:id="@+id/txtViewMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"
+        android:padding="8dp" />
+    <Button
+        android:id="@+id/btnStartGhetto"
+        android:state_pressed = "false"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF03DAC5"
+        android:text="@string/btnStartGhetto"
+        android:onClick="startGhettoRecorderService"
+        android:layout_marginTop="2dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtViewMain" />
+    <Button
+        android:id="@+id/btnStartBrowser"
+        android:visibility="invisible"
+        android:state_pressed = "false"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFF00"
+        android:text="@string/btnStartBrowser"
+        android:onClick="startBrowser"
+        android:layout_marginTop="2dp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/btnStartGhetto" />
+</RelativeLayout>
